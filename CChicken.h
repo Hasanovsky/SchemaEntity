@@ -17,4 +17,5 @@ public:
 	DECLARE_SCHEMA_CLASS(CChicken)
 
     SCHEMA_FIELD(ChickenActivity, m_currentActivity)
+    SCHEMA_FIELD(CHandle<CCSPlayerPawn>, m_leader);
 };
