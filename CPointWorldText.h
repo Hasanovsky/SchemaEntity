@@ -6,9 +6,9 @@ class CPointWorldText : public CModelPointEntity
 public:
 	DECLARE_SCHEMA_CLASS(CPointWorldText)
 
-	SCHEMA_FIELD_POINTER(char, m_messageText)
-	SCHEMA_FIELD_POINTER(char, m_FontName)
-	SCHEMA_FIELD_POINTER(char, m_BackgroundMaterialName)
+	SCHEMA_FIELD(char[512], m_messageText)
+	SCHEMA_FIELD(char[64], m_FontName)
+	SCHEMA_FIELD(char[64], m_BackgroundMaterialName)
 	SCHEMA_FIELD(bool, m_bEnabled)
 	SCHEMA_FIELD(bool, m_bFullbright)
 	SCHEMA_FIELD(float32, m_flWorldUnitsPerPx)
