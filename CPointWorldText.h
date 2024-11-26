@@ -1,5 +1,12 @@
 #pragma once
+
 #include "CModelPointEntity.h"
+
+class CModelPointEntity : public CBaseModelEntity
+{
+public:
+	DECLARE_SCHEMA_CLASS(CModelPointEntity)
+};
 
 class CPointWorldText : public CModelPointEntity
 {
@@ -16,7 +23,4 @@ public:
 	SCHEMA_FIELD(float32, m_flDepthOffset)
 	SCHEMA_FIELD(bool, m_bDrawBackground)
 	SCHEMA_FIELD_POINTER(Color, m_Color)
-	//float32 m_flBackgroundBorderWidth;
-	//float32 m_flBackgroundBorderHeight;
-	//float32 m_flBackgroundWorldToUV;
 };
