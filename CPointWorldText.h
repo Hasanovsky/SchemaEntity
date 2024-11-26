@@ -27,6 +27,7 @@ public:
 	SCHEMA_FIELD(float32, m_flFontSize)
 	SCHEMA_FIELD(float32, m_flDepthOffset)
 	SCHEMA_FIELD(bool, m_bDrawBackground)
+	SCHEMA_FIELD(bool, m_bDrawBackground)
 	SCHEMA_FIELD_POINTER(Color, m_Color)
 	SCHEMA_FIELD(PointWorldTextJustifyHorizontal_t, m_nJustifyHorizontal)
 	SCHEMA_FIELD(PointWorldTextJustifyVertical_t, m_nJustifyVertical)
