@@ -27,11 +27,10 @@ public:
 	SCHEMA_FIELD(float32, m_flFontSize)
 	SCHEMA_FIELD(float32, m_flDepthOffset)
 	SCHEMA_FIELD(bool, m_bDrawBackground)
-	SCHEMA_FIELD(bool, m_bDrawBackground)
+	SCHEMA_FIELD(float32, m_flBackgroundBorderWidth)
+	SCHEMA_FIELD(float32. m_flBackgroundBorderHeight)
+	SCHEMA_FIELD(float32, m_flBackgroundWorldToUV)
 	SCHEMA_FIELD_POINTER(Color, m_Color)
 	SCHEMA_FIELD(PointWorldTextJustifyHorizontal_t, m_nJustifyHorizontal)
 	SCHEMA_FIELD(PointWorldTextJustifyVertical_t, m_nJustifyVertical)
-	//float32 m_flBackgroundBorderWidth;
-	//float32 m_flBackgroundBorderHeight;
-	//float32 m_flBackgroundWorldToUV;
 };
