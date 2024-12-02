@@ -13,6 +13,11 @@ enum class PointWorldTextJustifyVertical_t : uint32_t {
 	POINT_WORLD_TEXT_JUSTIFY_VERTICAL_TOP = 0x2,
 };
 
+enum class PointWorldTextReorientMode_t : uint32_t {
+	POINT_WORLD_TEXT_REORIENT_NONE = 0x0,
+	POINT_WORLD_TEXT_REORIENT_AROUND_UP = 0x1,
+};
+
 class CPointWorldText : public CModelPointEntity
 {
 public:
@@ -33,4 +38,5 @@ public:
 	SCHEMA_FIELD_POINTER(Color, m_Color)
 	SCHEMA_FIELD(PointWorldTextJustifyHorizontal_t, m_nJustifyHorizontal)
 	SCHEMA_FIELD(PointWorldTextJustifyVertical_t, m_nJustifyVertical)
+	SCHEMA_FIELD(PointWorldTextReorientMode_t, m_nReorientMode)
 };
