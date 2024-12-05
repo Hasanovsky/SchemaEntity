@@ -171,6 +171,7 @@ public:
 
 	Vector GetAbsOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin; }
 	QAngle GetAbsRotation() { return m_CBodyComponent->m_pSceneNode->m_angAbsRotation; }
+	QAngle GetAngRotation() { return m_CBodyComponent->m_pSceneNode->m_angRotation; }
 	Vector GetAbsVelocity() { return m_vecAbsVelocity; }
 	void SetAbsOrigin(Vector vecOrigin) { m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin = vecOrigin; }
 	void SetAbsRotation(QAngle angAbsRotation) { m_CBodyComponent->m_pSceneNode->m_angAbsRotation = angAbsRotation; }
