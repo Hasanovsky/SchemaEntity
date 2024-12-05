@@ -170,6 +170,7 @@ public:
 	int entindex() { return m_pEntity->m_EHandle.GetEntryIndex(); }
 
 	Vector GetAbsOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin; }
+	Vector GetVecOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecOrigin; }
 	QAngle GetAbsRotation() { return m_CBodyComponent->m_pSceneNode->m_angAbsRotation; }
 	QAngle GetAngRotation() { return m_CBodyComponent->m_pSceneNode->m_angRotation; }
 	Vector GetAbsVelocity() { return m_vecAbsVelocity; }
