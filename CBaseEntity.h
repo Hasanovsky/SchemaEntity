@@ -64,6 +64,7 @@ public:
 	SCHEMA_FIELD(Vector, m_vecAbsOrigin);
 	SCHEMA_FIELD(QAngle, m_angAbsRotation);
 	SCHEMA_FIELD(Vector, m_vRenderOrigin);
+	SCHEMA_FIELD(Vector, m_vecVelocity);
 
 	matrix3x4_t EntityToWorldTransform()
 	{
