@@ -64,7 +64,6 @@ public:
 	SCHEMA_FIELD(Vector, m_vecAbsOrigin);
 	SCHEMA_FIELD(QAngle, m_angAbsRotation);
 	SCHEMA_FIELD(Vector, m_vRenderOrigin);
-	SCHEMA_FIELD(Vector, m_vecVelocity);
 
 	matrix3x4_t EntityToWorldTransform()
 	{
@@ -173,7 +172,6 @@ public:
 	Vector GetVecOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecOrigin; }
 	Vector GetAbsOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin; }
 	QAngle GetAbsRotation() { return m_CBodyComponent->m_pSceneNode->m_angAbsRotation; }
-	QAngle GetAngRotation() { return m_CBodyComponent->m_pSceneNode->m_angRotation; }
 	Vector GetAbsVelocity() { return m_vecAbsVelocity; }
 	void SetAbsOrigin(Vector vecOrigin) { m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin = vecOrigin; }
 	void SetAbsRotation(QAngle angAbsRotation) { m_CBodyComponent->m_pSceneNode->m_angAbsRotation = angAbsRotation; }
