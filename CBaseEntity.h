@@ -57,7 +57,7 @@ public:
 	SCHEMA_FIELD(CEntityInstance*, m_pOwner);
 	SCHEMA_FIELD(CGameSceneNode*, m_pParent);
 	SCHEMA_FIELD(CGameSceneNode*, m_pChild);
-	SCHEMA_FIELD(CNetworkOriginCellCoordQuantizedVector, m_vecOrigin);
+	SCHEMA_FIELD(Vector, m_vecOrigin);
 	SCHEMA_FIELD(QAngle, m_angRotation);
 	SCHEMA_FIELD(float, m_flScale);
 	SCHEMA_FIELD(float, m_flAbsScale);
@@ -170,7 +170,7 @@ public:
 
 	int entindex() { return m_pEntity->m_EHandle.GetEntryIndex(); }
 
-	Vector GetVecOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin; }
+	Vector GetVecOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecOrigin; }
 	Vector GetAbsOrigin() { return m_CBodyComponent->m_pSceneNode->m_vecAbsOrigin; }
 	QAngle GetAbsRotation() { return m_CBodyComponent->m_pSceneNode->m_angAbsRotation; }
 	QAngle GetAngRotation() { return m_CBodyComponent->m_pSceneNode->m_angRotation; }
