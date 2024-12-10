@@ -185,11 +185,6 @@ public:
 	{
 		CALL_VIRTUAL(void, 156, this, position, angles, velocity);
 	}
-
-	void EmitSound(const char *pszSound, int nPitch = 100, float flVolume = 1.0, float flDelay = 0.0)
-	{
-		World_Text::CBaseEntity_EmitSoundParams(this, pszSound, nPitch, flVolume, flDelay);
-	}
 	
 	void SetMoveType(MoveType_t nMoveType)
 	{
