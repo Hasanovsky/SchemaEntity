@@ -185,6 +185,16 @@ public:
 	{
 		CALL_VIRTUAL(void, 156, this, position, angles, velocity);
 	}
+
+	SndOpEventGuid_t EmitSoundFilter(IRecipientFilter &filter, const char *pszSound, float flVolume = 1.0, float flPitch = 1.0)
+	{
+		EmitSound_t params;
+		params.m_pSoundName = pszSound;
+		params.m_flVolume = flVolume;
+		params.m_nPitch = flPitch;
+
+		return World_Text::CBaseEntity_EmitSoundFilter(filter, entindex(), params);
+	}
 	
 	void SetMoveType(MoveType_t nMoveType)
 	{
