@@ -126,6 +126,14 @@ public:
 	SCHEMA_FIELD(bool, m_bDuckOverride)
 };
 
+class CPlayer_CameraServices : public CPlayerPawnComponent
+{
+public:
+	DECLARE_SCHEMA_CLASS(CPlayer_CameraServices);
+
+	SCHEMA_FIELD(CHandle<CBaseEntity>, m_hViewEntity)
+};
+
 class CPlayer_WeaponServices : public CPlayerPawnComponent
 {
 public:
