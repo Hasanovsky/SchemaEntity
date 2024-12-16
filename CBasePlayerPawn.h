@@ -9,6 +9,7 @@ public:
 	DECLARE_SCHEMA_CLASS(CBasePlayerPawn);
 
 	SCHEMA_FIELD(CPlayer_MovementServices*, m_pMovementServices)
+	SCHEMA_FIELD(CPlayer_MovementServices_Humanoid*, m_pMovementServicesHumanoid)
 	SCHEMA_FIELD(CCSPlayer_WeaponServices*, m_pWeaponServices)
 	SCHEMA_FIELD(CCSPlayer_ItemServices*, m_pItemServices)
 	SCHEMA_FIELD(CPlayer_ObserverServices*, m_pObserverServices)
