@@ -10,6 +10,7 @@ public:
 
 	SCHEMA_FIELD(CPlayer_MovementServices*, m_pMovementServices)
 	SCHEMA_FIELD(CCSPlayer_WeaponServices*, m_pWeaponServices)
+	SCHEMA_FIELD(CPlayer_CameraServices*, m_pCameraServices)
 	SCHEMA_FIELD(CCSPlayer_ItemServices*, m_pItemServices)
 	SCHEMA_FIELD(CPlayer_ObserverServices*, m_pObserverServices)
 	SCHEMA_FIELD(CHandle<CBasePlayerController>, m_hController)
