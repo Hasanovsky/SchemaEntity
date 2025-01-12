@@ -34,6 +34,7 @@ public:
 	SCHEMA_FIELD(bool, m_bSwitchingTeamsAtRoundReset);
 	SCHEMA_FIELD_POINTER(CUtlVector<SpawnPoint*>, m_CTSpawnPoints);
 	SCHEMA_FIELD_POINTER(CUtlVector<SpawnPoint*>, m_TerroristSpawnPoints);
+	SCHEMA_FIELD(CUtlString, m_sRoundEndFunFactToken);
 };
 
 class CCSGameRulesProxy : public CBaseEntity
