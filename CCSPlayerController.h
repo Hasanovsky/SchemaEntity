@@ -26,6 +26,7 @@ public:
 	SCHEMA_FIELD(int32_t, m_iRoundScore);
 	SCHEMA_FIELD(int32_t, m_iRoundsWon);
 	SCHEMA_FIELD(int32_t, m_iMVPs);
+	SCHEMA_FIELD(int32_t, m_iMusicKitID);
 	SCHEMA_FIELD(float, m_flSmoothedPing);
 	SCHEMA_FIELD(GameTime_t, m_flForceTeamTime);
 	SCHEMA_FIELD(int32_t, m_iCompetitiveRanking);
